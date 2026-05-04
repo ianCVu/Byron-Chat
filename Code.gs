@@ -13,3 +13,6 @@ function importMessages() {
   var messages = JSON.parse(document.getBody().getText());
   return messages;
 }
+function doGet(e) {
+  return HtmlService.createHtmlOutputFromFile('index');
+}
